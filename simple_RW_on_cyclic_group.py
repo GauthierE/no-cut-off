@@ -39,6 +39,7 @@ def simulation(n, d):
 
     return TV_distances
 
+
 # plot the evolution of the TV distance between Q^*k and U (k = 0, ..., n-1) on the cyclic group of order d
 def TV_plot(n, d):
 
