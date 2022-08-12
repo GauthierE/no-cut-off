@@ -1,11 +1,3 @@
-'''
-This script highlights a simple case with no cut-off phenomenon: simple random walks (RW) on cyclic groups.
-We consider the cyclic group of order d, and the following random walk: 
-from a state k (mod d), the following state is either k+1 (mod d) or k-1 (mod d) with probability 1/2.
-The RW starts in 0.
-'''
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -44,6 +36,7 @@ def simulation(n, d):
 def TV_plot(n, d):
 
     plt.figure(figsize=(10, 7))
+    plt.ylim(0, 1)
 
     plt.xlabel(r'$k$')
     plt.ylabel(r'$|Q^{*k}-U|_{TV}$')
